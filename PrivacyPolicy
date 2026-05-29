@@ -26,11 +26,11 @@ To Provide and Maintain the Service: To manage your account, provide you with ac
 
 To Personalise Your Experience: To tailor AI-generated feedback based on your performance and the content you provide in the Experience Builder.
 
-To Improve Our Application: To understand how users interact with our app, identify areas for improvement, and fix bugs or crashes.
+To Improve Our Application and Support Research: Anonymised metrics and engagement data are used to understand how users interact with our app, identify areas for improvement, fix bugs or crashes, and inform ongoing product development and research. This data does not personally identify you.
 
 For Medical Education Research (with your consent): If you opt-in during onboarding, your anonymised performance data may be used for research purposes to create better educational tools. Your personal information will never be shared.
 
-To Communicate With You (with your consent): If you opt-in, we may use your email address to contact you for feedback or to provide information about the Service.
+To Communicate With You (with your explicit consent): If you explicitly opt-in, we may use your email address to provide information about the Service or to invite you to participate in user research interviews. Only users who have explicitly opted in will ever be contacted for these purposes.
 
 4. Data Storage and Security
 We use secure cloud-based servers (Google Firebase) located in multiple regions to store your data. We take reasonable measures to protect your information from unauthorised access, loss, or misuse.
