@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!--
+  SINGLE SOURCE OF TRUTH for the MedPrep privacy policy.
+  The website serves this file, and the iOS app downloads, parses and caches it,
+  so edit the wording here and nowhere else. Changes reach the app without a release.
+
+  The app reads only this subset, inside <div class="container">:
+    block tags:   <h1> (title)  <h2> (section)  <h3> (sub-section)  <p>  <li>
+    inline tags:  <strong>/<b>  <em>/<i>  <a href="...">  <br>
+  Other tags are ignored, so keep the content to these. The first <h1> must contain
+  "Privacy Policy" and there must be at least three <h2> sections, or the app keeps
+  its previously cached copy instead.
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,7 +33,7 @@
   <div class="container">
     <h1>Privacy Policy for MedPrep</h1>
     <p><strong>Last Updated:</strong> 27 October 2026</p>
-    <p>This is the single, current privacy policy for MedPrep on iPhone and Android. The apps link here rather than carrying their own copies.</p>
+    <p>This is the single, current privacy policy for MedPrep on iPhone and Android. The apps display this page rather than carrying their own copies.</p>
 
     <h2>1. Introduction</h2>
     <p>
