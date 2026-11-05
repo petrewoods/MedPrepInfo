@@ -32,7 +32,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy for MedPrep</h1>
-    <p><strong>Last Updated:</strong> 27 October 2026</p>
+    <p><strong>Last Updated:</strong> 4 November 2026</p>
     <p>This is the single, current privacy policy for MedPrep on iPhone and Android. The apps display this page rather than carrying their own copies.</p>
 
     <h2>1. Introduction</h2>
@@ -47,7 +47,10 @@
       <li><strong>Career and Progress:</strong> Your selected career tracks, the stations you complete, and the AI-generated feedback and scores you receive.</li>
       <li><strong>Experience Builder Content:</strong> Portfolio entries you create are stored with your account and used to tailor your feedback.</li>
       <li><strong>Onboarding Choices:</strong> Your answers to our onboarding questions, such as how you heard about us, your interview date and how often you want to practise.</li>
-      <li><strong>Analytics and Crash Data:</strong> Metrics about how you use the app, such as which stations you open and finish, and crash reports including device type and operating system. These are linked to your anonymous User ID but not to your name or email.</li>
+      <li><strong>Warm-up Details:</strong> When you tell us about yourself in the onboarding warm-up, the app picks out a few key details from your answer, such as your stage of training, what you are applying to, interview dates, experiences you mention and what you want to work on. We store these details, not your recording or a transcript.</li>
+      <li><strong>Station Activity:</strong> Which stations you open, start, finish or leave early, and any errors you run into, so we can see where people get stuck and fix it.</li>
+      <li><strong>Subscription Status:</strong> Whether you subscribe, your plan, its renewal status and the amounts paid, as reported to us by RevenueCat and the App Store.</li>
+      <li><strong>Analytics and Crash Data:</strong> Metrics about how you use the app and crash reports including device type and operating system. These are linked to your anonymous User ID but not to your name or email.</li>
     </ul>
     <p>This data is kept until you delete your account in the app, under Settings &rarr; Data &amp; Privacy &rarr; Delete Account &amp; Data.</p>
 
@@ -55,14 +58,15 @@
     <h3>Mock interviews</h3>
     <p>Your recording is sent to Google's Gemini models, through Google Cloud Vertex AI, to be marked. MedPrep does not store recordings on its servers. The copy on your phone is deleted once your feedback has been generated.</p>
     <h3>Live and conversation stations</h3>
-    <p>On iPhone, your speech is turned into text by Apple's speech recognition. That text, and any replies you type, are sent to Google's Gemini models to play the other person in the scenario and to mark your answer, and the replies you hear are voiced by Google's text-to-speech services.</p>
-    <p>On Android, your voice is streamed to Google's Gemini Live model, which listens and replies in real time. A transcript of the conversation is then used to mark your answer.</p>
-    <p>Google may process this data outside the UK. Only the resulting feedback and scores are stored with your account.</p>
+    <p>Your voice is streamed to Google's Gemini Live model, through Google Cloud Vertex AI, which listens and replies in real time. A transcript of the conversation is then sent to Google's Gemini models to mark your answer. On iPhone, if the live model is unavailable, your speech may instead be turned into text by Apple's speech recognition, sent to Gemini, and the replies voiced by Google's text-to-speech services.</p>
+    <h3>Onboarding warm-up</h3>
+    <p>During onboarding we invite you to tell us about yourself for about 30 seconds and then have a short live conversation. Your 30-second recording is sent to Google's Gemini models, through Google Cloud Vertex AI, to be turned into text, and the copy on your phone is deleted straight after. That text is then used by Gemini Live, which streams your voice and replies in real time, to ask you a couple of follow-up questions, and by Gemini to pick out the key details described in section 2. If you type instead, your text is sent to Gemini in the same way. The warm-up is not marked, and your recording and transcript are not stored. You can skip it, type instead, or do it later.</p>
+    <p>Google may process this data outside the UK. Only the resulting feedback, scores and warm-up details are stored with your account.</p>
 
     <h2>4. How We Use Your Data</h2>
     <ul>
       <li><strong>To Provide the Service:</strong> To manage your account, give you access to interview stations, mark your answers and show your progress.</li>
-      <li><strong>To Personalise Your Feedback:</strong> To tailor AI-generated feedback to your performance and to what you add in the Experience Builder.</li>
+      <li><strong>To Personalise Your Practice:</strong> To tailor AI-generated feedback, suggested stations and reminders to your performance, your warm-up details and what you add in the Experience Builder.</li>
       <li><strong>To Improve the App and Support Research:</strong> Usage metrics and crash reports help us find bugs, see where people get stuck, and inform product development and research.</li>
       <li><strong>For Medical Education Research (with your consent):</strong> If you opt in during onboarding, your anonymised performance data may be used for research into better educational tools. You will not be identifiable.</li>
       <li><strong>To Contact You (with your explicit consent):</strong> If you opt in, we may email you about the service or invite you to a user research interview. Only users who have opted in are contacted. You can change this at any time in Settings &rarr; Contact me by email.</li>
@@ -73,12 +77,12 @@
       <li><strong>Google (Gemini via Vertex AI, text-to-speech):</strong> processes your recordings, transcripts and answers to generate feedback and role-play replies.</li>
       <li><strong>Google Firebase (Authentication, Firestore, Crashlytics, Analytics, Remote Config):</strong> signs you in, stores your account data, and collects crash reports and usage metrics.</li>
       <li><strong>Apple (Sign in with Apple, speech recognition, App Store):</strong> signs you in, transcribes speech in live stations on iPhone, and handles payments.</li>
-      <li><strong>RevenueCat:</strong> manages subscriptions. Your name, email address and purchase history are shared with them so we can identify your account for billing support and restore purchases. If you installed MedPrep from an Apple Search Ad, they also receive Apple's ad attribution data.</li>
+      <li><strong>RevenueCat:</strong> manages subscriptions. Your name, email address and purchase history are shared with them so we can identify your account for billing support and restore purchases. We also share your selected track, career stage, how you heard about us, the month you joined and of your interview, and how many stations you have completed, so we can tailor which offers and subscription options you see. If you installed MedPrep from an Apple Search Ad, they also receive Apple's ad attribution data.</li>
     </ul>
     <p>These providers process data on our behalf and do not use it for their own purposes. We do not sell your data or share it with anyone else. Each provider has its own privacy policy, which we encourage you to review.</p>
 
     <h2>6. Users Under 18</h2>
-    <p>Medical school applicants may be under 18. Their voice, answers and account data are handled exactly as described above, with no profiling and no marketing use.</p>
+    <p>Medical school applicants may be under 18. Their voice, answers and account data are handled exactly as described above, with no marketing use. Their warm-up details are used only to tailor their own practice, never for advertising or to make decisions about them.</p>
 
     <h2>7. Data Storage and Security</h2>
     <p>Your account data is stored on Google Firebase servers. We take reasonable measures to protect your information from unauthorised access, loss or misuse.</p>
