@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--
-  SINGLE SOURCE OF TRUTH for the MedPrep privacy policy.
-  The website serves this file, and the iOS app downloads, parses and caches it,
-  so edit the wording here and nowhere else. Changes reach the app without a release.
+  SINGLE SOURCE OF TRUTH for the privacy policy of The Schema (formerly MedPrep).
+  The website serves this file, and the iOS and Android apps download, parse and cache it,
+  so edit the wording here and nowhere else. Changes reach the apps without a release.
 
-  The app reads only this subset, inside <div class="container">:
+  The apps read only this subset, inside <div class="container">:
     block tags:   <h1> (title)  <h2> (section)  <h3> (sub-section)  <p>  <li>
     inline tags:  <strong>/<b>  <em>/<i>  <a href="...">  <br>
   Other tags are ignored, so keep the content to these. The first <h1> must contain
@@ -14,7 +14,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MedPrep Privacy Policy</title>
+  <title>The Schema Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; color: #212529; line-height: 1.55; }
@@ -31,80 +31,201 @@
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy for MedPrep</h1>
-    <p><strong>Last Updated:</strong> 19 November 2026</p>
-    <p>This is the single, current privacy policy for MedPrep on iPhone, Android and the web (<a href="https://medprep-interview.web.app">medprep-interview.web.app</a>). The apps display this page rather than carrying their own copies. The website works the same way as the apps and uses the same account, so everything below applies to it too.</p>
+    <h1>Privacy Policy for The Schema</h1>
+    <p><strong>Last Updated:</strong> 23 November 2026</p>
+    <p>This is the privacy policy for The Schema, the interview practice app and website for UK medical specialty interviews. The Schema was previously called MedPrep: if you joined as a MedPrep user, this policy applies to you and your account is unchanged. It covers the iPhone and Android apps and the website, which all use the same account. The apps display this page rather than carrying their own copies.</p>
 
-    <h2>1. Introduction</h2>
-    <p>
-      Welcome to MedPrep. We are committed to protecting your privacy and handling your data in an open and transparent manner.
-      This policy sets out what personal data we collect, who processes it, how long we keep it, how we use it, and your rights over it.
-    </p>
+    <h2>1. Who We Are</h2>
+    <p>The Schema is provided by <strong>Woods Labs Ltd</strong>, a company registered in England and Wales (company number 17591040), registered office Flat 503, 44 Aytoun Street, Manchester, M1 3GL. Woods Labs Ltd is the data controller for your personal data and is registered with the UK Information Commissioner's Office (registration number ZC307736). Our director is Dr Peter Woods, a UK doctor, who writes the interview stations.</p>
+    <p>The Schema name is used under licence from Doctor Devify Ltd, which runs The Schema's one-to-one mock interview service at theschema.co.uk. Doctor Devify Ltd does not receive your personal data from the app (see section 7).</p>
+    <p>Questions about this policy or your data: <a href="mailto:privacy@woodslabs.uk">privacy@woodslabs.uk</a>.</p>
 
-    <h2>2. Data Stored With Your Account</h2>
+    <h2>2. The Short Version</h2>
     <ul>
-      <li><strong>Account Information:</strong> Your anonymous User ID, email address, and your name. Age is optional and only collected if you choose to contribute extra data.</li>
-      <li><strong>Career and Progress:</strong> Your selected career tracks, the stations you complete, and the AI-generated feedback and scores you receive.</li>
-      <li><strong>Experience Builder Content:</strong> Portfolio entries you create are stored with your account and used to tailor your feedback.</li>
-      <li><strong>Onboarding Choices:</strong> Your answers to our onboarding questions, such as how you heard about us, your interview date and how often you want to practise.</li>
-      <li><strong>Warm-up Details:</strong> When you tell us about yourself in the onboarding warm-up, the app picks out a few key details from your answer, such as your stage of training, what you are applying to, interview dates, experiences you mention and what you want to work on. We store these details, not your recording or a transcript.</li>
-      <li><strong>Station Activity:</strong> Which stations you open, start, finish or leave early, and any errors you run into, so we can see where people get stuck and fix it.</li>
-      <li><strong>Subscription Status:</strong> Whether you subscribe, your plan, its renewal status and the amounts paid, as reported to us by RevenueCat and the App Store.</li>
-      <li><strong>Analytics and Crash Data:</strong> Metrics about how you use the app and crash reports including device type and operating system. These are linked to your anonymous User ID but not to your name or email.</li>
-      <li><strong>Website Analytics Cookies:</strong> On the website, Google Analytics (part of Google Firebase) sets analytics cookies only if you choose "Allow" on the cookie banner. They tell us which pages and stations people use so we can improve the site; we use no advertising cookies. If you choose "No thanks", no analytics cookies are set and Google receives only cookieless, aggregated signals. To change your choice, clear this site's data in your browser and the banner will ask again.</li>
+      <li>Your voice recordings are sent to Google's Gemini AI to be marked and are <strong>never stored</strong> on our servers. We keep text transcripts of your latest answers so we can show you how you've improved.</li>
+      <li>We use Google (Firebase and Gemini) to run the service, RevenueCat, Apple, Google Play and Stripe for payments, and nobody else gets your recordings or answers.</li>
+      <li>We <strong>do not sell your data</strong>, show you adverts or use your answers to train AI models.</li>
+      <li>You can delete your account and data at any time in the app.</li>
     </ul>
-    <p>This data is kept until you delete your account in the app, under Settings &rarr; Data &amp; Privacy &rarr; Delete Account &amp; Data.</p>
 
-    <h2>3. Your Voice and Answers</h2>
-    <h3>Mock interviews</h3>
-    <p>Your recording is sent to Google's Gemini models, through Google Cloud Vertex AI, to be marked. MedPrep does not store recordings on its servers. The copy on your phone is deleted once your feedback has been generated.</p>
+    <h2>3. Data We Store With Your Account</h2>
+    <ul>
+      <li><strong>Account details:</strong> your User ID, your name and email address (from Apple, Google or the email you sign in with), and how you sign in. If you use Sign in with Apple and hide your email, we only see Apple's relay address.</li>
+      <li><strong>Career and interview details:</strong> the interview track you choose (for example IMT or CST), your career stage, your interview date and how often you want to practise.</li>
+      <li><strong>Results:</strong> the stations you complete, your scores, and the AI-generated feedback and key points for each one.</li>
+      <li><strong>Answer transcripts:</strong> for each station, a text transcript of your most recent answer, so your feedback can show what has improved since last time. It is replaced when you try the station again and deleted with your account.</li>
+      <li><strong>Warm-up details:</strong> if you do the onboarding warm-up, the text of what you said or typed, and the key details picked out from it (such as your stage of training, what you are applying to, experiences you mention and what you want to work on). We use these to tailor your practice. We do not keep the recording.</li>
+      <li><strong>Experience Builder entries:</strong> portfolio notes you add, used to tailor your feedback.</li>
+      <li><strong>Station activity:</strong> which stations you open, start, finish or leave early, which platform and app version you used, and any errors you run into.</li>
+      <li><strong>Subscription status:</strong> whether you subscribe, through which store, your plan, renewal status and the amounts paid, as reported by RevenueCat, Apple, Google and Stripe.</li>
+      <li><strong>Where you came from:</strong> if you arrive through a tracked link (for example a link shared by The Schema or a partner), the campaign details in that link (source, medium, campaign and, for partner links, the partner and track), the page you landed on, the referring website, and the platform and app version you signed up on. On Android this comes from Google Play's install referrer. We record this once, when you sign up. On iPhone, Apple only gives us campaign totals, not who came from where.</li>
+      <li><strong>Brand label:</strong> whether your account was created under the MedPrep name or as The Schema. We use this only for accounting with our brand partner.</li>
+      <li><strong>Your choices:</strong> whether you have agreed to be contacted by email, reminder settings, and your cookie choice on the website.</li>
+      <li><strong>Messages you send us:</strong> feedback, bug reports (with your device model and operating system version) and feature requests you submit in the app, with your email address so we can reply.</li>
+    </ul>
+
+    <h2>4. Your Voice, Answers and AI</h2>
+    <p>Being clear about this matters to us, because you may be talking about your clinical experience.</p>
+    <h3>Recorded stations</h3>
+    <p>Your recording is sent to Google's Gemini models, through Google Cloud Vertex AI, to be written out as text and marked. We do not store recordings on our servers. The copy on your device is deleted once your feedback has been generated. We keep the text transcript of your latest answer at each station, as described in section 3.</p>
     <h3>Live and conversation stations</h3>
-    <p>Your voice is streamed to Google's Gemini Live model, through Google Cloud Vertex AI, which listens and replies in real time. A transcript of the conversation is then sent to Google's Gemini models to mark your answer. On iPhone, if the live model is unavailable, your speech may instead be turned into text by Apple's speech recognition, sent to Gemini, and the replies voiced by Google's text-to-speech services.</p>
+    <p>Your voice is streamed to Google's Gemini Live model, through Google Cloud Vertex AI, which listens and replies in real time as the patient, relative or panel. A transcript of the conversation is then sent to Gemini to mark your answer. Your voice is not stored; the transcript of your latest attempt is kept as described in section 3. If the live model is unavailable, or in typed conversation stations, your speech may be turned into text by your device's own speech recognition (Apple on iPhone and Safari, Google on Android and Chrome) and the replies voiced by Google Cloud Text-to-Speech or your device's built-in voice.</p>
     <h3>Onboarding warm-up</h3>
-    <p>During onboarding we invite you to tell us about yourself for about 30 seconds and then have a short live conversation. Your 30-second recording is sent to Google's Gemini models, through Google Cloud Vertex AI, to be turned into text, and the copy on your phone is deleted straight after. That text is then used by Gemini Live, which streams your voice and replies in real time, to ask you a couple of follow-up questions, and by Gemini to pick out the key details described in section 2. If you type instead, your text is sent to Gemini in the same way. The warm-up is not marked, and your recording and transcript are not stored. You can skip it, type instead, or do it later.</p>
-    <p>Google may process this data outside the UK. Only the resulting feedback, scores and warm-up details are stored with your account.</p>
-
-    <h2>4. How We Use Your Data</h2>
+    <p>During onboarding we invite you to tell us about yourself for about 30 seconds and then have a short live conversation. Your recording is sent to Gemini to be turned into text and deleted from your device straight after. Gemini Live then uses that text to ask a couple of follow-up questions, and Gemini picks out the key details described in section 3. The warm-up is not marked, and you can skip it or type instead.</p>
+    <h3>What the AI does and doesn't do</h3>
     <ul>
-      <li><strong>To Provide the Service:</strong> To manage your account, give you access to interview stations, mark your answers and show your progress.</li>
-      <li><strong>To Personalise Your Practice:</strong> To tailor AI-generated feedback, suggested stations and reminders to your performance, your warm-up details and what you add in the Experience Builder.</li>
-      <li><strong>To Improve the App and Support Research:</strong> Usage metrics and crash reports help us find bugs, see where people get stuck, and inform product development and research.</li>
-      <li><strong>For Medical Education Research (with your consent):</strong> If you opt in during onboarding, your anonymised performance data may be used for research into better educational tools. You will not be identifiable.</li>
-      <li><strong>To Contact You (with your explicit consent):</strong> If you opt in, we may email you about the service or invite you to a user research interview. Only users who have opted in are contacted. You can change this at any time in Settings &rarr; Contact me by email.</li>
+      <li>Google processes this data on our behalf under its Google Cloud terms. It does not use your recordings, transcripts or answers to train its models.</li>
+      <li>The AI marks your practice answers. It does not make decisions about you that have legal or similarly significant effects. You can always ask us about a mark.</li>
+      <li>Please don't include real patients' names or anything else that could identify a patient in your answers.</li>
     </ul>
 
-    <h2>5. Our Lawful Basis for Using Your Data</h2>
-    <p>Under the UK General Data Protection Regulation (UK GDPR) we must have a lawful basis for each way we use your personal data. MedPrep is run by Peter Woods, who is the data controller. We rely on:</p>
+    <h2>5. Why We Hold Your Data, Our Lawful Basis and How Long We Keep It</h2>
+    <p>Under the UK General Data Protection Regulation (UK GDPR) we need a lawful basis, from Article 6, for each kind of personal data we hold. Here is each kind of data, why we hold it, our lawful basis and how long we keep it.</p>
+    <h3>Account details</h3>
     <ul>
-      <li><strong>Contract (Article 6(1)(b)):</strong> using your data is necessary to provide the service you signed up for. This covers your account, your career tracks and progress, sending your recordings, transcripts and answers to our AI providers to generate your feedback and role-play replies, storing your feedback and scores, tailoring your practice to your warm-up details and Experience Builder content, reminders you ask for, and managing your subscription.</li>
-      <li><strong>Legitimate interests (Article 6(1)(f)):</strong> using your data is necessary for our legitimate interests, unless your rights and interests override them. We rely on this to evaluate and improve the service (station activity, usage metrics and crash reports), to keep the app secure and prevent misuse, to provide billing support, and to tailor which subscription offers you see. We keep this data linked to your anonymous User ID where we can and have weighed it against your privacy. You can object to this use at any time by contacting us.</li>
-      <li><strong>Consent (Article 6(1)(a)):</strong> we only use your data for medical education research, contact you by email or invite you to a user research interview, collect your age, or set analytics cookies on the website, if you have opted in. You can withdraw your consent at any time in the app's settings or by contacting us, without affecting anything done before you withdrew.</li>
+      <li><strong>What:</strong> User ID, name, email address, how you sign in.</li>
+      <li><strong>Why:</strong> to create and run your account and let you sign in on any device.</li>
+      <li><strong>Lawful basis:</strong> contract (Article 6(1)(b)).</li>
+      <li><strong>Kept:</strong> until you delete your account.</li>
+    </ul>
+    <h3>Practice and marking</h3>
+    <ul>
+      <li><strong>What:</strong> career and interview details, results, scores, feedback, answer transcripts, warm-up details and Experience Builder entries. Recordings are sent to Google's Gemini AI to be marked but not stored.</li>
+      <li><strong>Why:</strong> to mark your answers, run role-plays, show your progress and tailor your practice.</li>
+      <li><strong>Lawful basis:</strong> contract (Article 6(1)(b)).</li>
+      <li><strong>Kept:</strong> until you delete your account. Each answer transcript is replaced when you redo that station. Recordings are deleted from your device once processed.</li>
+    </ul>
+    <h3>Subscriptions and payments</h3>
+    <ul>
+      <li><strong>What:</strong> subscription status, plan, store, renewal status and amounts paid.</li>
+      <li><strong>Why:</strong> to give you premium access on every platform and provide billing support.</li>
+      <li><strong>Lawful basis:</strong> contract (Article 6(1)(b)).</li>
+      <li><strong>Kept:</strong> while your account exists. The financial records are then kept as described under tax and accounting records below.</li>
+    </ul>
+    <h3>Tax and accounting records</h3>
+    <ul>
+      <li><strong>What:</strong> records of payments, refunds and the account they relate to.</li>
+      <li><strong>Why:</strong> because UK company and tax law requires us to keep them.</li>
+      <li><strong>Lawful basis:</strong> legal obligation (Article 6(1)(c)).</li>
+      <li><strong>Kept:</strong> six years after the end of the financial year they relate to, even if you delete your account.</li>
+    </ul>
+    <h3>Security and preventing misuse</h3>
+    <ul>
+      <li><strong>What:</strong> app security checks (App Check), sign-in records, usage limits.</li>
+      <li><strong>Why:</strong> to keep the service and your account safe and stop abuse.</li>
+      <li><strong>Lawful basis:</strong> legitimate interests (Article 6(1)(f)).</li>
+      <li><strong>Kept:</strong> until you delete your account, or as long as the security provider needs (short-lived tokens).</li>
+    </ul>
+    <h3>Improving the service</h3>
+    <ul>
+      <li><strong>What:</strong> station activity, usage analytics in the apps, crash and performance reports, and anonymous website health reports with no cookies.</li>
+      <li><strong>Why:</strong> to fix problems, see where people get stuck and make the service better.</li>
+      <li><strong>Lawful basis:</strong> legitimate interests (Article 6(1)(f)).</li>
+      <li><strong>Kept:</strong> station activity until you delete your account; crash reports 90 days; app analytics up to 14 months; website health reports 180 days.</li>
+    </ul>
+    <h3>Where you came from and partner accounting</h3>
+    <ul>
+      <li><strong>What:</strong> campaign and referral link details, and your brand label (MedPrep or The Schema).</li>
+      <li><strong>Why:</strong> to see which links and partners bring people to us, tailor subscription offers, and calculate what we owe our brand partner.</li>
+      <li><strong>Lawful basis:</strong> legitimate interests (Article 6(1)(f)).</li>
+      <li><strong>Kept:</strong> until you delete your account. Payment statements to our partner are kept as tax and accounting records.</li>
+    </ul>
+    <h3>Research and publication</h3>
+    <ul>
+      <li><strong>What:</strong> pseudonymised usage and performance data, analysed in aggregate (see section 8).</li>
+      <li><strong>Why:</strong> to understand and improve how doctors prepare for interviews, and possibly to publish anonymised findings.</li>
+      <li><strong>Lawful basis:</strong> legitimate interests (Article 6(1)(f)), with the research safeguards in Article 89.</li>
+      <li><strong>Kept:</strong> pseudonymised analysis data for as long as the study needs it. Published results are anonymous.</li>
+    </ul>
+    <h3>Messages, feedback and support</h3>
+    <ul>
+      <li><strong>What:</strong> feedback, bug reports (with device model and operating system), feature requests and emails you send us.</li>
+      <li><strong>Why:</strong> to answer you and fix what you report.</li>
+      <li><strong>Lawful basis:</strong> legitimate interests (Article 6(1)(f)).</li>
+      <li><strong>Kept:</strong> until you delete your account, or two years, whichever is sooner.</li>
+    </ul>
+    <h3>Internal reports</h3>
+    <ul>
+      <li><strong>What:</strong> sign-up notices and daily summaries sent to our director by Telegram, and internal spreadsheets that identify accounts only by a scrambled ID.</li>
+      <li><strong>Why:</strong> to run the business and spot problems quickly.</li>
+      <li><strong>Lawful basis:</strong> legitimate interests (Article 6(1)(f)).</li>
+      <li><strong>Kept:</strong> Telegram messages 12 months; spreadsheets until you delete your account.</li>
+    </ul>
+    <h3>Things you choose to allow</h3>
+    <ul>
+      <li><strong>What:</strong> analytics cookies on the website; emails about the service and invitations to user research interviews; any quote from your answers in a publication.</li>
+      <li><strong>Why:</strong> only because you said yes.</li>
+      <li><strong>Lawful basis:</strong> consent (Article 6(1)(a)). You can withdraw it at any time in the app's settings, on the website, or by emailing us, without affecting anything we did before.</li>
+      <li><strong>Kept:</strong> until you withdraw consent or delete your account. Analytics cookies expire after up to 14 months.</li>
+    </ul>
+    <h3>Legitimate interests and your right to object</h3>
+    <p>Where we rely on legitimate interests, we have weighed our interests against your privacy, keep the data linked to your User ID rather than your name wherever we can, and never use it for advertising. You can object to any of these uses at any time (see section 11).</p>
+    <h3>Special category data</h3>
+    <p>We do not ask for special category data, such as health, ethnicity or religion. Your voice is processed only to turn speech into text and mark your answers. It is never used to identify you, so it is not biometric data. If you mention your own health in an answer, it is processed only to mark that answer. Please don't include patients' identifiable details (see section 4).</p>
+    <h2>6. Who Processes Your Data</h2>
+    <p>These providers process data on our behalf, under contracts that limit them to our instructions:</p>
+    <ul>
+      <li><strong>Google (Firebase and Google Cloud):</strong> sign-in, our database, file storage, app security checks (App Check, using Apple App Attest, Google Play Integrity and reCAPTCHA on the web), remote settings, crash reports (Crashlytics), performance monitoring and usage analytics (Google Analytics for Firebase), plus Gemini AI through Vertex AI and Cloud Text-to-Speech. We also keep internal reports in Google Sheets that identify accounts only by a scrambled ID.</li>
+      <li><strong>Apple:</strong> Sign in with Apple, App Store payments, App Attest and on-device speech recognition.</li>
+      <li><strong>Google Play:</strong> Google sign-in on Android, Play payments and Play Integrity.</li>
+      <li><strong>RevenueCat:</strong> manages app subscriptions and premium access across platforms. It receives your User ID, name, email, purchase history and a few details used to tailor offers and measure where subscribers come from: your track, career stage, how you heard about us, the month you joined and of your interview, how many stations you've completed, the campaign you came from, your brand label, and Apple's ad attribution data if you installed from an Apple Search Ad.</li>
+      <li><strong>Stripe:</strong> takes card payments on the website for Woods Labs Ltd, trading as The Schema. Stripe receives your email and payment details; we receive your User ID, the email's domain, your subscription status and amounts, never your full card number. Stripe is also an independent controller for some data, for example fraud prevention.</li>
+      <li><strong>Telegram:</strong> our director receives internal operational reports through a private Telegram bot, including a notice when someone signs up. These can include your name, your onboarding and warm-up answers, how many stations you have done and whether you have paid. They never include recordings or transcripts.</li>
+    </ul>
+    <p>On the website, your browser's own speech recognition may process your speech in typed conversation stations (for example Google in Chrome or Apple in Safari), under that company's privacy terms.</p>
+
+    <h2>7. Sharing and Our Brand Partner</h2>
+    <ul>
+      <li><strong>We do not sell or rent your personal data</strong>, and we don't share it with advertisers or data brokers.</li>
+      <li>Doctor Devify Ltd licenses The Schema brand to us and promotes the app. We pay it a share of profit, so each month we give it a statement of payments for accounts labelled as The Schema: date, store, amounts and a shortened account reference, but never your name, email, answers or results. We may also tell it how many people signed up or subscribed through its links, as totals.</li>
+      <li>We may disclose data if the law requires it, to protect our rights or users' safety, or to a buyer if the business is ever sold, in which case this policy would continue to apply.</li>
     </ul>
 
-    <h2>6. Service Providers</h2>
-    <p>On the website, if you speak in a typed conversation station, your browser's own speech recognition may turn your speech into text (for example Google in Chrome or Apple in Safari) before it is sent to Gemini. Live stations on the website stream your voice to Gemini Live exactly as the apps do.</p>
+    <h2>8. Research and Publication</h2>
+    <p>We have no publications planned at the moment, but in future we may want to publish what we learn about interview preparation in the medical education and technology literature, for example in journals or at conferences.</p>
     <ul>
-      <li><strong>Google (Gemini via Vertex AI, text-to-speech):</strong> processes your recordings, transcripts and answers to generate feedback and role-play replies.</li>
-      <li><strong>Google Firebase (Authentication, Firestore, Crashlytics, Analytics, Remote Config):</strong> signs you in, stores your account data, and collects crash reports and usage metrics.</li>
-      <li><strong>Apple (Sign in with Apple, speech recognition, App Store):</strong> signs you in, transcribes speech in live stations on iPhone, and handles payments.</li>
-      <li><strong>RevenueCat:</strong> manages subscriptions. Your name, email address and purchase history are shared with them so we can identify your account for billing support and restore purchases. We also share your selected track, career stage, how you heard about us, the month you joined and of your interview, and how many stations you have completed, so we can tailor which offers and subscription options you see. If you installed MedPrep from an Apple Search Ad, they also receive Apple's ad attribution data.</li>
+      <li><strong>Only aggregated or anonymised findings:</strong> for example averages, trends and comparisons between groups, based on usage and performance data such as stations completed, scores, how scores change with practice, career stage and interview track. Nobody will be identifiable from anything we publish, and very small groups are combined or left out.</li>
+      <li><strong>No quotes without your consent:</strong> we will never publish anything identifiable about you, or quotes from your transcripts, recordings or written answers, without asking you first and getting your explicit consent.</li>
+      <li><strong>Safeguards:</strong> before analysis we remove names, email addresses and other direct identifiers and replace your User ID with a scrambled code (pseudonymisation), and we use only the data each question needs. If an academic collaborator helps analyse the data, it will be under a written agreement with the same safeguards.</li>
+      <li><strong>Ethics:</strong> where a study needs it, we will get research ethics approval, or confirmation that it isn't needed, before publishing.</li>
+      <li><strong>Lawful basis and your right to object:</strong> this relies on our legitimate interests in improving medical education (see section 5). You can object at any time by emailing <a href="mailto:privacy@woodslabs.uk">privacy@woodslabs.uk</a>, and your data will be left out of future analyses. Findings already published can't be withdrawn, but they don't identify you.</li>
     </ul>
-    <p>These providers process data on our behalf and do not use it for their own purposes. We do not sell your data or share it with anyone else. Each provider has its own privacy policy, which we encourage you to review.</p>
+    <h2>9. Cookies and Similar Technology on the Website</h2>
+    <ul>
+      <li><strong>Analytics cookies (only with your consent):</strong> Google Analytics and Firebase Performance Monitoring run with cookies only if you choose "Allow" on the cookie banner. They show us which pages and stations people use. If you choose "No thanks", no analytics cookies are set and Google receives only cookieless, aggregated signals. We use no advertising cookies.</li>
+      <li><strong>Storage needed to run the site:</strong> your browser keeps your sign-in, your cookie choice, your selected track and, while you sign in by email link, your email address.</li>
+      <li><strong>Where you came from:</strong> if you arrive through a tracked link, your browser keeps its campaign details until you sign up, so we can record which link brought you, and then clears them.</li>
+      <li><strong>Site health:</strong> the website sends anonymous reports of page loads, loading speed and errors (the page path and your browser type, with no cookies, identifiers or account details) to our own server, so we can find and fix problems. Like any website, our servers see your IP address and browser details when you connect. We don't store them with these reports, but they may appear in our hosting provider's server logs, which are deleted after 30 days.</li>
+      <li>To change your cookie choice, clear this site's data in your browser and the banner will ask again.</li>
+    </ul>
 
-    <h2>7. Users Under 18</h2>
-    <p>Medical school applicants may be under 18. Their voice, answers and account data are handled exactly as described above, with no marketing use. Their warm-up details are used only to tailor their own practice, never for advertising or to make decisions about them.</p>
+    <h2>10. Deleting Your Account</h2>
+    <p>You can delete your account at any time in the app (Settings &rarr; Data &amp; Privacy &rarr; Delete Account &amp; Data) or by emailing us. We then delete your account and the data linked to it, except the tax and accounting records we must keep (see section 5). Deleting your account does not cancel an App Store or Google Play subscription: cancel that in your phone's settings.</p>
+    <h2>11. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>get a copy of the personal data we hold about you, including in a portable format;</li>
+      <li>have inaccurate data corrected;</li>
+      <li>have your data deleted;</li>
+      <li>restrict how we use it, or object to any use based on our legitimate interests;</li>
+      <li>withdraw consent at any time, without affecting what we did before.</li>
+    </ul>
+    <p>You can delete your account and change whether we may email you in the app's settings. For anything else, email <a href="mailto:privacy@woodslabs.uk">privacy@woodslabs.uk</a>. We will reply within one month. If you are unhappy with how we have handled your data, please tell us; you can also complain to the Information Commissioner's Office at <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk</a> or on 0303 123 1113.</p>
 
-    <h2>8. Data Storage and Security</h2>
-    <p>Your account data is stored on Google Firebase servers. We take reasonable measures to protect your information from unauthorised access, loss or misuse.</p>
+    <h2>12. Where Your Data Is Processed</h2>
+    <p>Our database is hosted by Google in the European Union, but some of our providers, including Google (for Gemini AI), RevenueCat, Stripe, Apple and Telegram, may process your data in the United States or other countries outside the UK. Where they do, we rely on the UK's adequacy regulations (including the UK-US Data Bridge for certified US companies) or on the UK's approved data transfer contracts, built into these providers' terms. You can ask us for details.</p>
 
-    <h2>9. Your Rights</h2>
-    <p>You have the right to access, correct or delete your personal data, to ask for a copy of what we hold in a portable format, to restrict how we use it, to object to any use based on our legitimate interests, and to withdraw consent at any time. You can manage your data and delete your account in the app's Data &amp; Privacy settings, or contact us below. You can also complain to the UK Information Commissioner's Office (ico.org.uk).</p>
+    <h2>13. Security</h2>
+    <p>Your data is encrypted in transit and stored on Google's servers. Access to your data is limited to our director, and our database rules stop other users and apps from reading it. No system is perfectly secure, but we take reasonable steps to protect your data, and we will tell you and the ICO if a breach puts you at risk.</p>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>We may update this policy from time to time. We will tell you about significant changes in the app or by email, and the date at the top of this page always shows the latest version.</p>
+    <h2>14. Users Under 18</h2>
+    <p>The Schema is designed for doctors, but some users may be under 18. Their data is handled exactly as described above, with no marketing use. Their warm-up details are used only to tailor their own practice, never for advertising or to make decisions about them.</p>
 
-    <h2>11. Contact Us</h2>
-    <p>If you have any questions about this policy or your data, please contact us at <a href="mailto:Peter.Woods@doctors.net.uk">Peter.Woods@doctors.net.uk</a>.</p>
+    <h2>15. Changes to This Policy</h2>
+    <p>We will update this policy when the service or the law changes. We will tell you about significant changes in the app or by email, and the date at the top always shows the latest version.</p>
+
+    <h2>16. Contact Us</h2>
+    <p>Woods Labs Ltd, Flat 503, 44 Aytoun Street, Manchester, M1 3GL. Email <a href="mailto:privacy@woodslabs.uk">privacy@woodslabs.uk</a>.</p>
   </div>
 </body>
 </html>
